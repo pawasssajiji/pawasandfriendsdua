@@ -4,55 +4,50 @@ import { Button } from '@/components/ui/button';
 
 const certificates = [
   {
-    title: 'AWS Certified Solutions Architect',
-    issuer: 'Amazon Web Services',
-    date: '2024',
-    credentialId: 'AWS-SAA-123456',
+    title: 'Juara 1',
+    issuer: 'Pencapain saya saat di kls 1-3 sd',
+    date: '2016-2019',
     image: '🏆',
     color: 'from-orange-500/20 to-yellow-500/20',
     link: '#',
   },
   {
-    title: 'Google Professional Cloud Developer',
-    issuer: 'Google Cloud',
-    date: '2023',
-    credentialId: 'GCP-PCD-789012',
-    image: '☁️',
+    title: 'Juara 2',
+    issuer: 'Pencapaian saya saat di kls 4-6 sd',
+    date: '2020-2022',
+    image: '🏆',
     color: 'from-blue-500/20 to-cyan-500/20',
     link: '#',
   },
   {
-    title: 'Meta Front-End Developer',
-    issuer: 'Meta (Coursera)',
-    date: '2023',
+    title: 'Menang lomba CFD',
+    issuer: 'Saya juara satu saat kelas 4 lomba ranking 1 di car free day',
+    date: '2020',
     credentialId: 'META-FE-345678',
-    image: '⚛️',
+    image: '🏆',
     color: 'from-blue-600/20 to-indigo-500/20',
     link: '#',
   },
   {
-    title: 'MongoDB Certified Developer',
-    issuer: 'MongoDB University',
-    date: '2023',
-    credentialId: 'MDB-DEV-901234',
+    title: 'Sehat',
+    issuer: 'Menurut saya ini pencapaian karena saya berolahraga',
+    date: 'selamanya',
     image: '🍃',
     color: 'from-green-500/20 to-emerald-500/20',
     link: '#',
   },
   {
-    title: 'Certified Kubernetes Administrator',
-    issuer: 'CNCF',
-    date: '2022',
-    credentialId: 'CKA-567890',
+    title: 'Jago Epep',
+    issuer: 'Ini sangat membanggakan karena saya player old (mekanik tua)',
+    date: '2017-selama main epep',
     image: '⚙️',
     color: 'from-indigo-500/20 to-purple-500/20',
     link: '#',
   },
   {
-    title: 'Professional Scrum Master I',
-    issuer: 'Scrum.org',
-    date: '2022',
-    credentialId: 'PSM-I-234567',
+    title: 'Selesai tugas ini Alhamdulillah',
+    issuer: 'Saya juga pake AI dalam mengerjakan, tetapi ini full saya buat tidak bergantung dgn AI',
+    date: '2026 24 Maret',
     image: '📋',
     color: 'from-teal-500/20 to-cyan-500/20',
     link: '#',
@@ -70,9 +65,11 @@ export default function CertificatesSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-primary font-medium mb-2 block">Kredensial</span>
+          <span className="text-primary font-medium mb-2 block">
+            Pamer
+            </span>
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
-            Sertifikat &amp; Lisensi
+          Pencapaian saya sekarang
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
         </motion.div>

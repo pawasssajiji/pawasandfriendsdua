@@ -40,11 +40,8 @@ export default function Navbar({ isDark, toggleTheme }: NavbarProps) {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'glass-strong shadow-card' : 'bg-transparent'
-      }`}
-    >
-      <div className="container mx-auto px-4">
+      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-strong"
+      style={{ background: 'var(--navbg)', boxShadow: 'var(--shadow-card), var(--shadow-glow)' }}>
         <div className="flex items-center justify-between h-16 md:h-20">
           <motion.a
             href="#home"
@@ -52,34 +49,13 @@ export default function Navbar({ isDark, toggleTheme }: NavbarProps) {
               e.preventDefault();
               scrollToSection('#home');
             }}
-            className="font-display text-xl md:text-2xl font-bold text-gradient cursor-pointer"
+            className="font-display text-xl md:text-2xl font-bold cursor-pointer pl-4"
+            style={{ color: 'white' }}
             whileHover={{ scale: 1.05 }}
           >
-            &lt;Dev /&gt;
+            Karya Pawas 
           </motion.a>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
-            {navItems.map((item) => (
-              <motion.a
-                key={item.label}
-                href={item.href}
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollToSection(item.href);
-                }}
-                className="text-muted-foreground hover:text-foreground transition-colors font-medium cursor-pointer"
-                whileHover={{ y: -2 }}
-              >
-                {item.label}
-              </motion.a>
-            ))}
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={toggleTheme}
-              className="rounded-full"
-            >
+          <Button variant="ghost" size="icon" onClick={toggleTheme} className="rounded-full">
               <AnimatePresence mode="wait">
                 {isDark ? (
                   <motion.div
@@ -101,8 +77,7 @@ export default function Navbar({ isDark, toggleTheme }: NavbarProps) {
                   </motion.div>
                 )}
               </AnimatePresence>
-            </Button>
-          </div>
+          </Button>
 
           {/* Mobile Menu Button */}
           <div className="flex items-center gap-2 md:hidden">
@@ -123,7 +98,6 @@ export default function Navbar({ isDark, toggleTheme }: NavbarProps) {
             </Button>
           </div>
         </div>
-      </div>
 
       {/* Mobile Menu */}
       <AnimatePresence>

@@ -19,19 +19,19 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'hello@developer.com',
-    href: 'mailto:hello@developer.com',
+    value: 'fawwaz241209@gmail.com',
+    href: 'fawwaz241209@gmail.com',
   },
   {
     icon: Phone,
     label: 'Telepon',
-    value: '+62 812 3456 7890',
+    value: '+62 823 1912 3737',
     href: 'tel:+6281234567890',
   },
   {
     icon: MapPin,
     label: 'Lokasi',
-    value: 'Jakarta, Indonesia',
+    value: 'Aceh, Indonesia',
     href: '#',
   },
 ];
@@ -129,9 +129,7 @@ export default function ContactSection() {
                 Mari Berkolaborasi!
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Punya project menarik atau ingin berkolaborasi? Jangan ragu untuk 
-                menghubungi saya. Saya selalu terbuka untuk diskusi tentang project 
-                baru, ide kreatif, atau kesempatan untuk menjadi bagian dari visi Anda.
+                Jujur saya tidak ahli dalam mengoding, menurut saya akan lebih baik jika kita bekerja sama dalam membuat project maka dari itu. Ayo kita bekerja sama!
               </p>
             </div>
 
@@ -193,7 +191,7 @@ export default function ContactSection() {
                     type="email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="email@example.com"
+                    placeholder="Email anda"
                     className={errors.email ? 'border-destructive' : ''}
                   />
                   {errors.email && (
