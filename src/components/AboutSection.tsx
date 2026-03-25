@@ -35,33 +35,35 @@ export default function AboutSection() {
 
           {/* FOTO / ICON */}
           <motion.div
-  initial={{ opacity: 0, x: -50 }}
-  whileInView={{ opacity: 1, x: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 0.6 }}
->
-  <div className="relative">
-    <div className="aspect-square rounded-2xl overflow-hidden glass shadow-card relative">
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="relative">
+              
+              {/* Container Foto dengan Backlight Gold */}
+              <div className="aspect-square rounded-2xl overflow-hidden glass shadow-card relative">
 
-      {/* BACKLIGHT GOLD */}
-      <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-yellow-400/40 to-yellow-600/30 blur-3xl"></div>
+                {/* BACKLIGHT GOLD */}
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-yellow-400/40 to-yellow-600/30 blur-3xl pointer-events-none"></div>
 
-      {/* FOTO LO */}
-      <img
-        src="/public/gambar2.jpg"
-        alt="Foto Saya"
-        className="relative w-full h-full object-cover rounded-2xl shadow-lg"
-      />
+                {/* FOTO LO */}
+                <img
+                  src="/gambar2.jpg"
+                  alt="fawas"
+                  className="relative w-full h-full object-cover rounded-2xl shadow-lg"
+                />
 
-    </div>
+              </div>
 
-    <div className="absolute -bottom-6 -right-6 p-4 glass rounded-xl shadow-card">
-      <p className="font-display font-bold text-2xl text-gradient">Pemula</p>
-      <p className="text-sm text-muted-foreground">Pengalaman</p>
-    </div>
-  </div>
-</motion.div>
-
+              {/* Badge */}
+              <div className="absolute -bottom-6 -right-6 p-4 glass rounded-xl shadow-card">
+                <p className="font-display font-bold text-2xl text-gradient">Pemula</p>
+                <p className="text-sm text-muted-foreground">Pengalaman</p>
+              </div>
+            </div>
+          </motion.div>
 
           {/* CONTENT */}
           <motion.div
@@ -99,7 +101,7 @@ export default function AboutSection() {
                 className="overflow-hidden"
               >
                 <p className="text-muted-foreground leading-relaxed p-4">
-                  Anak di samping ini adalah saya, yg lahir pada tanggal 24 bulan desember tahun 2009, Saya sekarang adalah siswa kelas 10-2 di MAN Model dan tinggal di Banda Aceh tepatnya di Lampriet. Saya termasuk orang yang aktif, mudah bergaul, dan suka berteman dengan siapa saja. Saya juga senang mencoba hal-hal baru
+                  Anak di samping ini adalah saya, yg lahir pada tanggal 24 bulan desember tahun 2009, Saya sekarang adalah siswa kelas 10-2 di MAN Model dan tinggal di Banda Aceh tepatnya di Lampriet. Saya termasuk orang yang aktif, mudah bergaul, dan suka berteman dengan siapa saja. Saya juga senang mencoba hal-hal baru.
 
                   <br /><br />
 

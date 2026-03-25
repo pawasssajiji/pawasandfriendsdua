@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown, Github, Linkedin, Youtube, Instagram } from 'lucide-react';
+import { ArrowDown, Github, Instagram } from 'lucide-react';
 
 export default function HeroSection() {
-  const scrollToSection = (id) => {
+  const scrollToSection = (id: string) => {
     const element = document.querySelector(id);
     if (element) element.scrollIntoView({ behavior: 'smooth' });
   };
@@ -19,7 +19,7 @@ export default function HeroSection() {
 
       <div className="container mx-auto px-6 relative z-10 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
         
-        {/* --- LEFT: PHOTO WITH GOLD & WHITE GLOW --- */}
+        {/* LEFT: PHOTO WITH GLOW */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -40,7 +40,7 @@ export default function HeroSection() {
             {/* Photo Circle */}
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-[26rem] lg:h-[26rem] rounded-full overflow-hidden border-2 border-white/10 bg-zinc-900 shadow-2xl">
               <img
-                src="/public/FAWAS.jpg"
+                src="/FAWAS.jpg"
                 alt="fawwaz"
                 className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition duration-700 transform hover:scale-105"
               />
@@ -53,14 +53,13 @@ export default function HeroSection() {
               className="absolute bottom-4 right-4 md:bottom-8 md:right-8 bg-[#1a1a1a] p-4 rounded-2xl border border-white/10 shadow-xl hidden md:block"
             >
               <div className="flex items-center gap-3">
-                
                 لَا تَحْزَنْ إِنَّ اللَّهَ مَعَنَ
               </div>
             </motion.div>
           </div>
         </motion.div>
 
-        {/* --- RIGHT: TEXT CONTENT --- */}
+        {/* RIGHT: TEXT */}
         <div className="w-full lg:w-7/12 text-center lg:text-left">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -69,9 +68,7 @@ export default function HeroSection() {
             className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight leading-[1.1]"
           >
             Muhammad Fawwaz Azizi <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-white to-yellow-200">
-            
-            </span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-white to-yellow-200"></span>
           </motion.h1>
 
           <motion.p
@@ -111,11 +108,9 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="flex items-center justify-center lg:justify-start gap-6"
           >
-            {[
+            {[ 
               { Icon: Github, link: "https://github.com/pawasssajiji" },
               { Icon: Instagram, link: "https://www.instagram.com/fwwazz_/?hl=id" },
-              
-              
             ].map((item, idx) => (
               <a 
                 key={idx} 
